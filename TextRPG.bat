@@ -6,6 +6,7 @@ set "_cd=%cd%"
 call :logo
 call :audio %txtrpgdir%\music.mp3
 :00
+title TextRPG ^| Title screen
 set page=0
 cls&%logo%
 echo.
@@ -38,12 +39,9 @@ start audio.vbs
 exit /b
 :logo
 ::https://patorjk.com/software/taag/#p=display&f=ANSI%20Shadow&t=Text%20RPG::
-set "logo1=echo [38;5;84m████████╗███████╗██╗  ██╗████████╗    ██████╗ ██████╗  ██████╗ [0m"
-set "logo2=echo [38;5;84m╚══██╔══╝██╔════╝╚██╗██╔╝╚══██╔══╝    ██╔══██╗██╔══██╗██╔════╝ [0m"
-set "logo3=echo [38;5;84m   ██║   █████╗   ╚███╔╝    ██║       ██████╔╝██████╔╝██║  ███╗[0m"
-set "logo4=echo [38;5;84m   ██║   ██╔══╝   ██╔██╗    ██║       ██╔══██╗██╔═══╝ ██║   ██║[0m"
-set "logo5=echo [38;5;84m   ██║   ███████╗██╔╝ ██╗   ██║       ██║  ██║██║     ╚██████╔╝[0m"
-set "logo6=echo [38;5;84m   ╚═╝   ╚══════╝╚═╝  ╚═╝   ╚═╝       ╚═╝  ╚═╝╚═╝      ╚═════╝ [0m"
-set "logo7=echo [38;5;8mTextRPG v0.0[0m"
-set "logo=cls&%logo1%&%logo2%&%logo3%&%logo4%&%logo5%&%logo6%&%logo7%"
+set "logo1=echo [38;5;84m_______  _______ _     _ _______       ______  _____   ______"
+set "logo2=echo [38;5;84m   ^|     ^|______  \___/     ^|         ^|_____/ ^|_____] ^|  ____"
+set "logo3=echo [38;5;84m   ^|     ^|______ _/   \_    ^|         ^|    \_ ^|       ^|_____^|"
+set "logo4=echo [38;5;8mTextRPG v0.0[0m"
+set "logo=cls&%logo1%&%logo2%&%logo3%&%logo4%"
 exit /b

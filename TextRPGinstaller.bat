@@ -1,0 +1,3 @@
+@echo off
+title TextRPG installer
+echo Installing TextRPG ...
